@@ -1,0 +1,2 @@
+rootProject.name = "tw_android_train"
+include ':app'
