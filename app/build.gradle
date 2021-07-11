@@ -16,24 +16,46 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    signingConfigs {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        app {
+            storeFile file("${rootProject.projectDir}/keystore/debug.keystore")
+            storePassword properties.getProperty("key.password")
+            keyAlias 'alias_name'
+            keyPassword properties.getProperty("key.password")
+        }
+        app {
+            storeFile file("${rootProject.projectDir}/keystore/release.keystore")
+            storePassword properties.getProperty("key.password")
+            keyAlias 'alias_name'
+            keyPassword properties.getProperty("key.password")
+        }
+
+        buildTypes {
+            debug {
+                minifyEnabled false
+                signingConfig signingConfigs.app
+            }
+            release {
+                minifyEnabled false
+                signingConfig signingConfigs.app
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+
+    dependencies {
+
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'com.google.android.material:material:1.2.1'
+        implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+        testImplementation 'junit:junit:4.+'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     }
-}
-
-dependencies {
-
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
