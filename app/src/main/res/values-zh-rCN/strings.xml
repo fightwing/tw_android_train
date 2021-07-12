@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="msg_button1">按钮 1</string>
+  <string name="msg_button2">按钮 2</string>
+  <string name="msg_button3">按钮 3</string>
+</resources>
