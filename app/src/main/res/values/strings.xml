@@ -11,4 +11,8 @@
   <string name="msg_button9">button 9</string>
   <string name="msg_button10">button 10</string>
   <string name="msg_android_practice">Android practice</string>
+  <string name="msg_hello" translatable="false">Hello!</string>
+  <string name="msg_signup" translatable="false">Signup</string>
+  <string name="msg_login" translatable="false">Login</string>
+  <string name="constrain_layout" translatable="false">constrain_layout</string>
 </resources>

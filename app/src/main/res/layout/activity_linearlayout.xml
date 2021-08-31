@@ -25,9 +25,12 @@
         android:text="@string/msg_android_practice"/>
 
       <Button
+        android:id="@+id/btn_constraint_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/msg_button1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/constrain_layout"
         android:layout_marginTop="70dp"
         style="@style/button" />
 
