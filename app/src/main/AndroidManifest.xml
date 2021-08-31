@@ -18,7 +18,10 @@
     </activity>
     <activity android:name=".ConstraintActivity"
       android:label="@string/constrain_layout"
-      android:screenOrientation="portrait"/>
+      android:screenOrientation="fullSensor"/>
+
+    <activity android:name=".LoginActivity"/>
+
   </application>
 
 </manifest>

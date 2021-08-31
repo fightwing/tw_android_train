@@ -15,4 +15,9 @@
   <string name="msg_signup" translatable="false">Signup</string>
   <string name="msg_login" translatable="false">Login</string>
   <string name="constrain_layout" translatable="false">constrain_layout</string>
+  <string name="username" translatable="false">Username</string>
+  <string name="password" translatable="false">Password</string>
+  <string name="remember_me" translatable="false">Remember me</string>
+  <string name="forgot_password" translatable="false">Forgot password?</string>
+  <string name="or_content_with">or content with</string>
 </resources>
