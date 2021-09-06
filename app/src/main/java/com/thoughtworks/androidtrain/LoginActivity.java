@@ -1,6 +1,5 @@
 package com.thoughtworks.androidtrain;
 
-import android.os.Build;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
@@ -10,8 +9,6 @@ import android.view.WindowInsetsController;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
 
 public class LoginActivity extends AppCompatActivity {
 

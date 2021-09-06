@@ -19,5 +19,6 @@
   <string name="password" translatable="false">Password</string>
   <string name="remember_me" translatable="false">Remember me</string>
   <string name="forgot_password" translatable="false">Forgot password?</string>
-  <string name="or_content_with">or content with</string>
+  <string name="or_content_with" translatable="false">or content with</string>
+  <string name="msg_pick_contact" translatable="false">pick contact</string>
 </resources>

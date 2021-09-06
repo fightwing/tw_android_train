@@ -42,9 +42,10 @@
         style="@style/button"/>
 
       <Button
+        android:id="@+id/btn_pick_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/msg_button3"
+        android:text="@string/msg_pick_contact"
         style="@style/button"/>
 
       <Button
