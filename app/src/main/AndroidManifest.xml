@@ -21,6 +21,7 @@
       android:screenOrientation="fullSensor"/>
 
     <activity android:name=".LoginActivity"/>
+    <activity android:name=".fragment.MyFragmentActivity"/>
 
   </application>
 

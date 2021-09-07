@@ -8,6 +8,7 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.thoughtworks.androidtrain.fragment.MyFragmentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     });
     findViewById(R.id.btn_pick_contact).setOnClickListener(v -> {
       selectContact();
+    });
+    findViewById(R.id.btn_fragment).setOnClickListener(v -> {
+      Intent intent = new Intent(MainActivity.this, MyFragmentActivity.class);
+      startActivity(intent);
     });
 
   }
