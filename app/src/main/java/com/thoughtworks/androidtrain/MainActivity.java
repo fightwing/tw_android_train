@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
       Intent intent = new Intent(MainActivity.this, MyFragmentActivity.class);
       startActivity(intent);
     });
-
+    findViewById(R.id.btn_recyclerview).setOnClickListener(v -> {
+      Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+      startActivity(intent);
+    });
   }
 
   static final int REQUEST_SELECT_PHONE_NUMBER = 1;
